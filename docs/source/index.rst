@@ -14,3 +14,4 @@ Contents
    Ingredients_Manager
    FAQ_Page
    About_Us_Page
+   Login_page
