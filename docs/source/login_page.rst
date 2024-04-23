@@ -1,10 +1,13 @@
 Login Page
 ==========
 
-**What to see**
+What to see
+----------
+
 On the login page, you are displayed with 2 input text boxes. These text fields allow the user to input an email address and password. If the login details don't match the backend (Firebase Auth), then the authentication will fail and the user will be prompted to try again.
 
-*Authentication page class*
+Authentication page class
+------------------------
 
 .. code-block:: dart
 
