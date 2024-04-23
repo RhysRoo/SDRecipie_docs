@@ -18,9 +18,9 @@ Contents
 
 .. toctree::
 
-   Profile_Page
-   API
-   Recipe_Generation
+   Profile_Page\n
+   API\n
+   Recipe_Generation\n
    Ingredients_Manager
-   FAQ_Page
+   FAQ_Page\n
    About_Us_Page
