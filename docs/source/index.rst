@@ -25,10 +25,10 @@ There is an app draw that displays all the buttons of the the pages in an easy-t
 Contents
 --------
 
-   * :ref Profile_Page
-   * :ref API
-   * :ref Recipe_Generation
-   * :ref Ingredients_Manager
-   * :ref FAQ_Page
-   * :ref About_Us_Page
-   * :ref Login_page
+   * :ref 'Profile_Page'
+   * :ref 'api'
+   * :ref 'recipe_generator'
+   * :ref 'Ingredients_Manager'
+   * :ref 'FAQ_Page'
+   * :ref 'About_Us_Page'
+   * :ref 'Login_page'
