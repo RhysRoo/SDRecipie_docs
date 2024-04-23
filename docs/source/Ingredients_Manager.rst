@@ -22,4 +22,4 @@ There is 3 buttons on this page:
 Each individual ingredient is separated by a card, which allows clean and simplistic spacing between all ingredient elements.
 
 **Open_food_Api**
-* The open food API calls and recieves from https://world.openfoodfacts.org/cgi/search.pl?search_terms=$ingredientName&search_simple=1&action=process&json=1
+The open food API calls and recieves from https://world.openfoodfacts.org/cgi/search.pl?search_terms=$ingredientName&search_simple=1&action=process&json=1
