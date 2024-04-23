@@ -68,6 +68,7 @@ There is a logo image on the login page that is directly above the user input fi
     const LogoTiling(imagePath: 'assets/images/logo/logo.png')
 
 Signin With Apple and Google
+--------------------------
 
 On the app it allows the user to log straight into the application with Apple and Google. This is a convenient way for the user to gain access in a fast and easy way and makes it easy as no additional passwords are required to gain access.
 
