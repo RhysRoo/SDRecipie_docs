@@ -64,6 +64,7 @@ There is a logo image on the login page that is directly above the user input fi
      }
 
 .. code-block:: dart
+    
     const LogoTiling(imagePath: 'assets/images/logo/logo.png')
 
 
