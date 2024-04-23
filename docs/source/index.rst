@@ -1,7 +1,6 @@
 Welcome to Wasteaway's documentation!
 ===================================
-
-Welcome to docs
+**Framemwork** (/Flutter/) is a cross-platform mobile development framework that allows a single codebase to be written in just one language. this is good as it saves development costs and supports hot reloading.
 
 Contents
 --------
