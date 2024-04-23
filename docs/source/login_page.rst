@@ -37,7 +37,7 @@ Authentication page class
 Logo Image
 -----------
 
-There is a logo image on the login page that is directly above the user input fields
+There is a logo image on the login page that is directly above the user input fields. This code is a seperate class with all the attributes of the tiled image.
 
 .. code-block:: dart
 
@@ -62,5 +62,8 @@ There is a logo image on the login page that is directly above the user input fi
              );
          }
      }
+
+.. code-block:: dart
+    const LogoTiling(imagePath: 'assets/images/logo/logo.png')
 
 
