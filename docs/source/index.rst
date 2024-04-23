@@ -1,23 +1,24 @@
-===================================
-Welcome to Wasteaway's documentation!
-===================================
+WasteAway: Your Personal Food Waste Management App
+==================================================
 
-**What is the Application:**
-Wasteaway is a mobile application that allows the user first to create an account connecting to the database. Once the account is created and all the details are validated. The user will be able to grant access to the application. When the user enters the homepage, there will be an introduction video directing the user on how to navigate through the pages. 
+**Overview**
+WasteAway is a mobile application designed to help users manage food waste effectively. After creating an account and connecting to our database, users gain access to a variety of features designed to make food waste management simple and intuitive.
 
-There is an app draw that displays all the buttons of the the pages in an easy-to-understand format with icons. A sign_out button also takes the user off the homepage and back to the login page in a logged-out state.
+Upon entering the homepage, users are greeted with an introductory video that guides them through the app's navigation. An easy-to-understand app drawer, complete with icons, provides quick access to all pages. A sign-out button is also available for users to log out and return to the login page.
 
-**Framework** (/Flutter/) is a cross-platform mobile development framework that allows a single codebase to be written in just one language. This is good as it saves development costs and supports hot reloading.
+**Technology Stack**
+Our app leverages the power of the Flutter framework and Firebase database:
 
-**Database** (/Firebase/) is a database used in the backend of the application.
+- **Flutter** is a cross-platform mobile development framework that allows for a single codebase written in just one language. This not only reduces development costs but also supports hot reloading for a seamless user experience.
 
+- **Firebase** is our chosen backend database, known for its scalability and real-time data syncing capabilities.
 
 .. note::
 
-   This project is under active development.
+   WasteAway is currently under active development. Stay tuned for updates!
 
-Contents
-========
+Table of Contents
+=================
 
 .. toctree::
    :maxdepth: 2
