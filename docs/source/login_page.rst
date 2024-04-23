@@ -77,3 +77,21 @@ On the app it allows the user to log straight into the application with Apple an
     // Apple and Google Sign In
     final GoogleSignInHandler _googleSignInHandler = GoogleSignInHandler();
     final AppleSignInHandler _appleSignInHandler = AppleSignInHandler();
+
+Register Button
+---------------
+
+The register button allows the user to create a account if there not registered - prompting the user to enter a email address and password that will communicate with the database to see if the username and password are both unique, before allowing the account to be created. The register_login_manager.dart handles all the operations.
+
+*Check Email Validity*
+
+.. code-block:: dart
+
+   bool checkEmailValidity(final String email) {
+       if (email.length >= 3 && email.length < 254 && email.contains('@')) {
+           var atIndex = email.indexOf('@');
+           // Split the email string by "@" and check if there are exactly two parts
+           return atIndex >= 3 && email.split('@').length == 2;
+       }
+       return false;
+   }
