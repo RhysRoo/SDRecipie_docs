@@ -9,6 +9,8 @@ Welcome to Wasteaway's documentation!
    This project is under active development.
 
 .. toctree::
+   :maxdepth: 5
+   :caption: Contents:
 
 
 
