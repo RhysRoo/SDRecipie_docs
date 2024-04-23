@@ -14,11 +14,30 @@ Our app leverages the power of the Flutter framework and Firebase database:
 - **Firebase** is our chosen backend database, known for its scalability and real-time data syncing capabilities.
 
 
-**How to Run the Application**
+How to Run the Application
+==========================
 
-To run the application there is 2 ways this can be done:
- *Change the directory to match the folder that holds all the apps components (in terminal -> cd SDrecipe -> cd recipe_app) then (in terminal -> flutter run recipe_app)
- *Locate the main.dart from the lib folder -> choose debugger 
+There are two ways to run the application:
+
+1. **Using the Terminal:**
+
+   - Change the directory to match the folder that holds all the app's components. In the terminal, enter the following commands:
+
+     .. code-block:: bash
+
+        cd SDrecipe
+        cd recipe_app
+
+   - Then, run the application with the following command:
+
+     .. code-block:: bash
+
+        flutter run recipe_app
+
+2. **Using the Debugger:**
+
+   - Locate the `main.dart` file from the `lib` folder.
+   - Choose the debugger to run the application.
 
 .. note::
 
