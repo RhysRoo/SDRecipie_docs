@@ -1,4 +1,4 @@
-Welcome to Lumache's documentation!
+Welcome to Wasteaway's documentation!
 ===================================
 
 **Lumache** (/lu'make/) is a Python library for cooks and food lovers
@@ -18,5 +18,9 @@ Contents
 
 .. toctree::
 
-   usage
-   api
+   Profile_Page
+   API
+   Recipe_Generation
+   Ingredients_Manager
+   FAQ_Page
+   About_Us_Page
