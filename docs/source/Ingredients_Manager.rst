@@ -36,3 +36,34 @@ The open food API calls and recieves from https://world.openfoodfacts.org/cgi/se
          return false;
        }
    }
+
+**Storing Ingredients to the Cloud**
+
+.. code-block:: dart
+
+    Future<void> storeUserIngredients(List<List<String>> listIngredients) async {
+    String uid = await userManager.getCurrentUserUID();
+
+    print("User UID: $uid");
+
+    List<Map<String, dynamic>> convertedList = // Conversion into a JSON Format
+        listIngredients.map((ingredient) {
+      return {
+        'name': ingredient[0],
+        'weight': ingredient[1],
+        'expiryDate': ingredient[2],
+      };
+    }).toList();
+
+    if (uid.isNotEmpty) {
+      try {
+        await firestore
+            .collection("UserIngredients")
+            .doc(uid)
+            .set({'ingredients': convertedList});
+        print('Ingredients Stored');
+      } catch (e) {
+        print("Error Ingredients Not Stored: $e");
+      }
+    }
+  }
