@@ -1,7 +1,7 @@
 Welcome to Wasteaway's documentation!
 ===================================
 
-
+Welcome to docs
 
 Contents
 --------
