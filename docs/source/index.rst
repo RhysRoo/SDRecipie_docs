@@ -17,9 +17,9 @@ There is an app draw that displays all the buttons of the the pages in an easy-t
    This project is under active development.
 
 .. toctree::
-   :maxdepth: 5
-   :caption: Contents:
+   :maxdepth: 2
 
+   Ingredients_Manager
 
 
 Contents
