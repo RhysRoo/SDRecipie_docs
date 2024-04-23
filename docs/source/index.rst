@@ -16,19 +16,16 @@ There is an app draw that displays all the buttons of the the pages in an easy-t
 
    This project is under active development.
 
+Contents
+========
+
 .. toctree::
    :maxdepth: 2
 
+   Profile_Page
+   api
+   recipe_generator
    Ingredients_Manager
-
-
-Contents
---------
-
-      * |Profile_Page|
-      * |api|
-      * |recipe_generator|
-      * |Ingredients_Manager|
-      * |FAQ_Page|
-      * |About_Us_Page|
-      * |Login_page|
+   FAQ_Page
+   About_Us_Page
+   Login_page

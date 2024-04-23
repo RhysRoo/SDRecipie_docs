@@ -1,4 +1,7 @@
-=================
+.. toctree::
+    :maxdepth: 2
+
+    Ingredients_Manager=================
 Ingredients_Manager
 =================
 
