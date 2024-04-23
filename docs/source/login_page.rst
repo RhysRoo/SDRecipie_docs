@@ -34,3 +34,33 @@ Authentication page class
        }
    }
 
+Logo Image
+-----------
+
+There is a logo image on the login page that is directly above the user input fields
+
+.. code-block:: dart
+
+     // A Tile for the logo
+     class LogoTiling extends StatelessWidget {
+         final String imagePath;
+         const LogoTiling({super.key, required this.imagePath});
+
+         @override
+         Widget build(BuildContext context) {
+             return Container(
+                 padding: const EdgeInsets.all(10),
+                 decoration: BoxDecoration(
+                     border: Border.all(color: Colors.white),
+                     borderRadius: BorderRadius.circular(16),
+                     color: Colors.grey[200],
+                 ),
+                 child: Image.asset(
+                     imagePath,
+                     height: 250,
+                 ),
+             );
+         }
+     }
+
+
