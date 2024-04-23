@@ -8,12 +8,14 @@ Welcome to Wasteaway's documentation!
 
    This project is under active development.
 
+.. toctree::
+:maxdepth: 2
+
+
 Contents
 --------
 
-.. toctree::
-
-   Profile_Page
+   * :ref Profile_Page
    API
    Recipe_Generation
    Ingredients_Manager
