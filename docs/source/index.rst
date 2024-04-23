@@ -13,6 +13,13 @@ Our app leverages the power of the Flutter framework and Firebase database:
 
 - **Firebase** is our chosen backend database, known for its scalability and real-time data syncing capabilities.
 
+
+**How to Run the Application**
+
+To run the application there is 2 ways this can be done:
+ *Change the directory to match the folder that holds all the apps components (in terminal -> cd SDrecipe -> cd recipe_app) then (in terminal -> flutter run recipe_app)
+ *Locate the main.dart from the lib folder -> choose debugger 
+
 .. note::
 
    WasteAway is currently under active development. Stay tuned for updates!
