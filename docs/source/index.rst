@@ -2,7 +2,7 @@
 Welcome to Wasteaway's documentation!
 ===================================
 
-**Framework** (/Flutter) is a cross-platform mobile development framework that allows a single codebase to be written in just one language. This is good as it saves development costs and supports hot reloading.
+**Framework** (/Flutter/) is a cross-platform mobile development framework that allows a single codebase to be written in just one language. This is good as it saves development costs and supports hot reloading.
 
 .. note::
 
@@ -17,10 +17,10 @@ Welcome to Wasteaway's documentation!
 Contents
 --------
 
-   * Profile_Page
-   * API
-   * Recipe_Generation
-   * Ingredients_Manager
-   * FAQ_Page
-   * About_Us_Page
-   * Login_page
+   * :ref Profile_Page
+   * :ref API
+   * :ref Recipe_Generation
+   * :ref Ingredients_Manager
+   * :ref FAQ_Page
+   * :ref About_Us_Page
+   * :ref Login_page
