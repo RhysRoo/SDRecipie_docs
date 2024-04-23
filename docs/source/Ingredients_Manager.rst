@@ -20,6 +20,7 @@ This page has 3 input fields for the user to enter before the select ingredient 
 Buttons
 ---------
 There is 3 buttons on this page:
+
 - **Add button:** The add button is used to add all the entered ingredients to the database.
 - **Save button:** The save button is used to save all changes to the page.
 - **Individual delete button:** The individual delete button is used to remove the select ingredients from the list of ingredients.
