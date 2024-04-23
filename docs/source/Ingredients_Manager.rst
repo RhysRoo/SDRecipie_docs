@@ -26,3 +26,13 @@ Each individual ingredient is separated by a card, which allows clean and simpli
 
 **Open_food_Api**
 The open food API calls and recieves from https://world.openfoodfacts.org/cgi/search.pl?search_terms=$ingredientName&search_simple=1&action=process&json=1
+
+.. code-block:: dart
+
+   class IngredientAPI {
+     // Returns a boolean value that determines if the ingredient is valid
+     Future<bool> ingredientAPICheck(String ingredientName) async {
+       if (ingredientName == '' || ingredientName.isEmpty) {
+         return false;
+       }
+   }
