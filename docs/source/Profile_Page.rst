@@ -244,16 +244,16 @@ The profile manager is a class that is used to manage the user profile page. The
 
 .. code-block:: dart
 
-class ProfileManager {
-  late UserManager userManager;
-  late FirebaseAuth? auth = FirebaseAuth.instance;
-  late FirebaseFirestore firestore = FirebaseFirestore.instance;
+    class ProfileManager {
+    late UserManager userManager;
+    late FirebaseAuth? auth = FirebaseAuth.instance;
+    late FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-  ProfileManager({FirebaseAuth? auth, FirebaseFirestore? firestore}) {
-    this.auth = auth ?? FirebaseAuth.instance;
-    this.firestore = firestore ?? FirebaseFirestore.instance;
-    userManager = UserManager(auth: this.auth!, firestore: this.firestore);
-  }    
+    ProfileManager({FirebaseAuth? auth, FirebaseFirestore? firestore}) {
+        this.auth = auth ?? FirebaseAuth.instance;
+        this.firestore = firestore ?? FirebaseFirestore.instance;
+        userManager = UserManager(auth: this.auth!, firestore: this.firestore);
+    }    
 
 **Init Values**
 
