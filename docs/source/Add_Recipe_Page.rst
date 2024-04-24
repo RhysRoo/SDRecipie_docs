@@ -109,3 +109,26 @@ On the main add recipe page there 4 buttons on display but more under view recip
 - Delete Recipe Button: is a button that allows the user to delete the recipe they have created
 - View more information Button: is a button that allows the user to view more information about the recipe they have created
 
+.. code-block:: dart
+    
+    ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const ShowRecipePage()),
+              );
+            },
+            style: ElevatedButton.styleFrom(
+              backgroundColor: const Color.fromARGB(255, 75, 175, 80),
+            ),
+            child: const Row(
+              children: [
+                Icon(Icons.cookie_outlined),
+                SizedBox(width: 8.0),
+                Text('View Recipes'),
+              ],
+            ),
+          ),
+
+**Rating Recipe Button**
+
