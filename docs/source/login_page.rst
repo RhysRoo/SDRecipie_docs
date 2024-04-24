@@ -124,9 +124,9 @@ Upon creating a password the user has a given validation rule, that checks the g
   return false;
 }
 
-**Other Validation Checkers**
+**Password Length Checker**
 
-This validation rule checks if the user 
+Upon creating a password the user has a given validation rule, that checks the given length of the password. if the password doesnt match the given rule. The user will be assigned to try again until the rule has beem met.
 
 .. code-block:: dart
 
@@ -136,11 +136,11 @@ This validation rule checks if the user
     return true;
   }
   return false;
-}
+  }
 
 **Other Validation Checkers**
 
-This validation rule checks if the user 
+This validation rule checks user inputs
 
 .. code-block:: dart
 
@@ -152,7 +152,12 @@ This validation rule checks if the user
     }
   }
   return false;
-}
+  }
+
+*This function takes an integer argument charCode, which represents a Unicode character code. The function checks if the provided character code falls within the ranges of alphanumeric characters in the ASCII table*
+- Ranges 48 - 57 corresponds to digits 0 - 9
+- Ranges 65 - 90 corresponds to uppercase letters A - Z
+- Ranges 97 - 122 corresponds to lowercase letters a - z
 
 .. code-block:: dart
 
@@ -160,10 +165,13 @@ This validation rule checks if the user
   return (charCode >= 48 && charCode <= 57) || // 0-9
       (charCode >= 65 && charCode <= 90) || // A-Z
       (charCode >= 97 && charCode <= 122); // a-z
-}
+  }
+
+This function checks if the provided character code is equal to 32
 
 .. code-block:: dart
 
   bool isWhitespace(int charCode) {
   return charCode == 32; // space
-}
+  }
+
