@@ -154,8 +154,8 @@ This validation rule checks user inputs
   return false;
   }
 
-This function takes an integer argument charCode, which represents a Unicode character code. The function checks if the provided character code falls within the ranges of alphanumeric characters in the ASCII table
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+*This function takes an integer argument charCode, which represents a Unicode character code. The function checks if the provided character code falls within the ranges of alphanumeric characters in the ASCII table*
+
 - Ranges 48 - 57 corresponds to digits 0 - 9
 - Ranges 65 - 90 corresponds to uppercase letters A - Z
 - Ranges 97 - 122 corresponds to lowercase letters a - z
