@@ -101,6 +101,7 @@ The register button allows the user to create a account if there not registered 
 This function is a validation rule that checks that the password is the same as the confirmation password.
 
 .. code-block:: dart
+    
     bool confirmPassword(final String passwordOne, final String passwordTwo) {
     if (samePassword(passwordOne, passwordTwo) &&
         passwordLengthCheck(passwordOne)) {
