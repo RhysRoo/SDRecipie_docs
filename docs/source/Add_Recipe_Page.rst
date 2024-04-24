@@ -130,7 +130,9 @@ On the main add recipe page there 4 buttons on display but more under view recip
             ),
           ),
 
-*ShowIngredients function*
+ShowIngredients function
+
+    This function is used to display the ingredients in a popup dialog box.
 
 .. code-block:: dart
 
@@ -169,8 +171,21 @@ On the main add recipe page there 4 buttons on display but more under view recip
   }
     
 
-**Removing_Recipes**
+**Delete Recipes**
 
+.. code-block:: dart
+
+    // Function to delete a recipe
+Future<void> _deleteRecipe(
+    String recipeName, List<Map<String, dynamic>> ingredients) async {
+  try {
+    await addRemoveRecipeManager.deleteRecipe(recipeName, ingredients);
+    // Update the state to reflect the changes
+    await _fetchRecipes();
+  } catch (e) {
+    print("Error deleting recipe: $e");
+  }
+}
 
 
 **Rating Recipe Button**
