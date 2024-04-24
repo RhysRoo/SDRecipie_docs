@@ -1,7 +1,7 @@
-Profile_Page
+Profile Page
 =============
 
-The structure behind the user profile page
+The Structure Behind the User Profile Page
 ------------------------------------------
 The user profile page is a page that allows the user to input their personal information. This page is only accessible to the user that is logged in. The user can input their username, name, age, food restriction and a personal bio. The food restriction is very important as it allows the app to put this into account when generating recipies.
 
@@ -23,5 +23,12 @@ Cards
 The user profile is made up of cards. Each card is a different section of the user profile. The cards are as follows:
 - Username and Food Restriction
 - User information (Age, First Name, Last Name, Bio)
+
+Buttons
+-------
+
+This page has two buttons that offer some CRUD operations:
+- Delete Information (The delete information button allows the user to delete their personal information from the page)
+- Change Information (The change information button allows the user to change/add their personal information on the page)
 
 
