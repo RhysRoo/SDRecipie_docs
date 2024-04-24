@@ -176,16 +176,16 @@ ShowIngredients function
 .. code-block:: dart
 
     // Function to delete a recipe
-Future<void> _deleteRecipe(
-    String recipeName, List<Map<String, dynamic>> ingredients) async {
-  try {
-    await addRemoveRecipeManager.deleteRecipe(recipeName, ingredients);
-    // Update the state to reflect the changes
-    await _fetchRecipes();
-  } catch (e) {
-    print("Error deleting recipe: $e");
-  }
-}
+    Future<void> _deleteRecipe(
+        String recipeName, List<Map<String, dynamic>> ingredients) async {
+    try {
+        await addRemoveRecipeManager.deleteRecipe(recipeName, ingredients);
+        // Update the state to reflect the changes
+        await _fetchRecipes();
+    } catch (e) {
+        print("Error deleting recipe: $e");
+    }
+    }
 
 
 **Rating Recipe Button**
