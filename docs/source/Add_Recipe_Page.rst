@@ -89,3 +89,23 @@ In the updated state, a new ingredient is added to the `_ingredients` list. Each
 
 After adding the new ingredient, the function clears the text fields and resets the selected unit to 'Select Unit'. Finally, it prints the updated list of ingredients to the console.
 
+Buttons
+-------
+
+On the main add recipe page there 4 buttons on display but more under view recipes.
+
+**Add Ingredient Button**
+
+- Add ingredient button: is displayed as a plus symbol that allows the user experience to be seamless
+
+- Save Recipe Button: is a button that allows the user to save the recipe they have created with all the ingredients and units
+
+- View Recipes Button: is a button that allows the user to view all the recipes they have created in a isloated environment
+
+- Clear Ingredients Button: is a button that allows the user to clear all the ingredients they have in the queue to be added to recipe.
+
+**View Recipes Buttons**
+
+- Delete Recipe Button: is a button that allows the user to delete the recipe they have created
+- View more information Button: is a button that allows the user to view more information about the recipe they have created
+
