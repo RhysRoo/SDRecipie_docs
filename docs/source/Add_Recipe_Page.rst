@@ -1,4 +1,4 @@
-Add Recipe
+Add Recipe Page
 ================
 
 About this Page
