@@ -12,7 +12,7 @@ The profile image is a picture of the user that is displayed on the user profile
 
 .. note::
 
-    Plan: 
+    Not yet implemented: 
     
     The user can upload a picture of themselves to be displayed on the user profile page. The user can also change the picture that is displayed on the user profile page. The user can also delete the picture that is displayed on the user profile page.
 
