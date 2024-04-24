@@ -30,6 +30,13 @@ The QAItem class is a model class that represents a question and answer. It has 
   });
 
 
+searchBar
+---------
+
+.. note::
+
+    The search functionality is implemented, but the functionally to search is not implemented. The search bar is a text field that allows the user to type in a question and press the search button to search for the question. The search bar is a stateful widget that has a text controller that allows the user to type in a question. The search bar also has a search button that allows the user to press the search button to search for the question.
+
 
 Buttons
 -------
