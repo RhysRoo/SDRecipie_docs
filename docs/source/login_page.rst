@@ -114,43 +114,56 @@ This function is a validation rule that checks that the password is the same as 
 
 Upon creating a password the user has a given validation rule, that checks the given length of the password. if the password doesnt match the given rule. The user will be assigned to try again until the rule has beem met.
 
-..code-block:: dart
+.. code-block:: dart
 
-    bool passwordLengthCheck(final String passwordOne) {
-    if ((passwordOne.length >= 6 && passwordOne.length <= 200) &&
-        containsSymbol(passwordOne)) {
-      return true;
-    }
-    return false;
+  bool passwordLengthCheck(final String passwordOne) {
+  if ((passwordOne.length >= 6 && passwordOne.length <= 200) &&
+      containsSymbol(passwordOne)) {
+    return true;
   }
+  return false;
+}
 
 **Other Validation Checkers**
 
 This validation rule checks if the user 
 
-..code-block:: dart
+.. code-block:: dart
 
-    bool containsSymbol(String input) {
-    // Converts input to unicode
-    for (var char in input.runes) {
-      if (!isAlphaNumeric(char) && !isWhitespace(char)) {
-        return true;
-      }
-    }
-    return false;
+  bool passwordLengthCheck(final String passwordOne) {
+  if ((passwordOne.length >= 6 && passwordOne.length <= 200) &&
+      containsSymbol(passwordOne)) {
+    return true;
   }
+  return false;
+}
 
-..code-block:: dart
+**Other Validation Checkers**
+
+This validation rule checks if the user 
+
+.. code-block:: dart
+
+  bool containsSymbol(String input) {
+  // Converts input to unicode
+  for (var char in input.runes) {
+    if (!isAlphaNumeric(char) && !isWhitespace(char)) {
+      return true;
+    }
+  }
+  return false;
+}
+
+.. code-block:: dart
 
   bool isAlphaNumeric(int charCode) {
-    return (charCode >= 48 && charCode <= 57) || // 0-9
-        (charCode >= 65 && charCode <= 90) || // A-Z
-        (charCode >= 97 && charCode <= 122); // a-z
-  }
+  return (charCode >= 48 && charCode <= 57) || // 0-9
+      (charCode >= 65 && charCode <= 90) || // A-Z
+      (charCode >= 97 && charCode <= 122); // a-z
+}
 
-..code-block:: dart
+.. code-block:: dart
 
   bool isWhitespace(int charCode) {
-    return charCode == 32; // space
-  }
+  return charCode == 32; // space
 }
