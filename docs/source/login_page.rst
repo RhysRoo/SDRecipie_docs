@@ -83,6 +83,26 @@ Register Button
 
 The register button allows the user to create a account if there not registered - prompting the user to enter a email address and password that will communicate with the database to see if the username and password are both unique, before allowing the account to be created. The register_login_manager.dart handles all the operations.
 
+.. code-block:: dart
+
+    Future<String> signUserUp(
+      BuildContext context,
+      TextEditingController emailController,
+      TextEditingController passwordController,
+      TextEditingController confirmPasswordController) async {
+    final String email = emailController.text.trim();
+    final String trimmedPassword = passwordController.text.trim();
+    final String trimmedConfirmPassword = confirmPasswordController.text.trim();
+
+    showDialog(
+      context: context,
+      builder: (context) {
+        return const Center(
+          child: CircularProgressIndicator(),
+        );
+      },
+    );
+
 **Check Email Validity**
 
 .. code-block:: dart
