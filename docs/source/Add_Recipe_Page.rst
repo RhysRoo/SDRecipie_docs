@@ -34,20 +34,21 @@ Text Fields
 
 You can enter the name of the recipe, the food restrictions, the ingredients, and the units in the text fields provided.
 
-Ingredient input field
+*Ingredient input field*
 
 .. code-block:: dart
-    child: TextField(
-            controller: _ingredientController,
-            decoration: const InputDecoration(
-              hintText: 'Enter ingredient',
-            ),
-          ),
+
+        child: TextField(
+                controller: _ingredientController,
+                decoration: const InputDecoration(
+                    hintText: 'Enter ingredient',
+                ),
         ),
 
-Quantity input field
+*Quantity input field*
 
 .. code-block:: dart
+
     child: TextField(
             controller: _quantityController,
             keyboardType: TextInputType.number,
@@ -56,7 +57,10 @@ Quantity input field
             ),
           ),
 
+*Unit input field*
+
 .. code-block:: dart
+
     Future<void> _addIngredient() async {
     String ingredient = _ingredientController.text;
     String quantity = _quantityController.text;
