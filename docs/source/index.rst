@@ -16,6 +16,12 @@ Our app leverages the power of the Flutter framework and Firebase database:
 - **Firebase** is our chosen backend database, known for its scalability and real-time data syncing capabilities.
 
 
+Theming
+-------
+
+The app's theme is designed to be user-friendly and intuitive. The color scheme is a combination of green colours to represent the environment and the app's purpose. The app's font is also chosen to be easy to read and understand with black on some instances and white on others to provide a good contrast.
+
+
 How to Run the Application
 ==========================
 
