@@ -110,7 +110,7 @@ On the main add recipe page there 4 buttons on display but more under view recip
 - View more information Button: is a button that allows the user to view more information about the recipe they have created
 
 .. code-block:: dart
-    
+
     ElevatedButton(
             onPressed: () {
               Navigator.push(
@@ -129,6 +129,49 @@ On the main add recipe page there 4 buttons on display but more under view recip
               ],
             ),
           ),
+
+*ShowIngredients function*
+
+.. code-block:: dart
+
+    void _showIngredientsPopup(BuildContext context, String recipeName,
+      List<Map<String, dynamic>> ingredients) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: Text('Ingredients for $recipeName'),
+          content: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              for (final ingredient in ingredients)
+                Text(
+                  '${ingredient['quantity'] ?? 'Quantity not specified'} of ${ingredient['ingredient']}',
+                  style: const TextStyle(fontSize: 14),
+                ),
+            ],
+          ),
+          actions: [
+            const SizedBox(
+              height: 15,
+            ),
+            TextButton(
+              onPressed: () {
+                Navigator.of(context).pop(); // Close the dialog
+              },
+              child: const Text('Close'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+    
+
+**Removing_Recipes**
+
+
 
 **Rating Recipe Button**
 
