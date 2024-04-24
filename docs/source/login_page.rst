@@ -140,11 +140,15 @@ This validation rule checks if the user
     return false;
   }
 
+..code-block:: dart
+
   bool isAlphaNumeric(int charCode) {
     return (charCode >= 48 && charCode <= 57) || // 0-9
         (charCode >= 65 && charCode <= 90) || // A-Z
         (charCode >= 97 && charCode <= 122); // a-z
   }
+
+..code-block:: dart
 
   bool isWhitespace(int charCode) {
     return charCode == 32; // space
