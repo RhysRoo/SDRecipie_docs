@@ -173,6 +173,8 @@ ShowIngredients function
 
 **Delete Recipes**
 
+This function is used to delete a recipe from the list of recipes.
+
 .. code-block:: dart
 
     // Function to delete a recipe
@@ -187,6 +189,16 @@ ShowIngredients function
     }
     }
 
-
 **Rating Recipe Button**
 
+This function is used to rate a recipe from 0 - 5 stars.
+
+.. code-block:: dart
+
+    children: List.generate(
+                    5,
+                    (index) => Icon(
+                      index < rating ? Icons.star : Icons.star_border,
+                      color: Colors.orange,
+                    ),
+                  ),
