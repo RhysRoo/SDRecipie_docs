@@ -49,7 +49,7 @@ Table of Contents
 =================
 
 .. toctree::
-   :maxdepth: 7
+   :maxdepth: 8
 
    Profile_Page
    api
@@ -58,3 +58,4 @@ Table of Contents
    FAQ_Page
    About_Us_Page
    login_page
+   Add_Recipe_Page
