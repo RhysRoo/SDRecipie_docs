@@ -21,14 +21,34 @@ Cards
 -----
 
 The user profile is made up of cards. Each card is a different section of the user profile. The cards are as follows:
+
 - Username and Food Restriction
+
 - User information (Age, First Name, Last Name, Bio)
 
 Buttons
 -------
 
 This page has two buttons that offer some CRUD operations:
+
 - Delete Information (The delete information button allows the user to delete their personal information from the page)
+
+.. code-block:: dart
+
+        Widget _buildActionButtons() {
+                return Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                        ElevatedButton(
+                            onPressed: () {
+                                _showDeleteConfirmationDialog();
+                            },
+                            child: const Text(
+                                'Delete Information',
+                                style: TextStyle(fontSize: 13),
+                            ),
+                        ),
+
 - Change Information (The change information button allows the user to change/add their personal information on the page)
 
 
