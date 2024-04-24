@@ -1,4 +1,4 @@
-Login/Signup Page
+login-signup-page
 ==========
 
 What to see
