@@ -310,3 +310,39 @@ This function is used to store the user's personal information in the database. 
       print("Error storing user details: $e");
     }
   }
+
+**deleteUserDetails Function**
+
+This function is used to delete the user's personal information from the database. The function first gets the user's UID and then deletes the user's personal information from the database using the UID. The function also updates the local user information (e.g., clear currentUser). 
+
+.. code-block:: dart
+
+    Future<void> deleteUserDetails() async {
+    try {
+      String? uid = await userManager.getCurrentUserUID();
+
+      // Reference to the user document in the "UserDetails" collection
+      DocumentReference userRef =
+          FirebaseFirestore.instance.collection('UserDetails').doc(uid);
+
+      // Set all fields to "N/A"
+      Map<String, dynamic> newData = {
+        'age': 'N/A',
+        'username': 'N/A',
+        'firstName': 'N/A',
+        'lastName': 'N/A',
+        'foodRestriction': 'N/A',
+        'bio': 'N/A'
+      };
+
+      // Update the user document with the new values
+      await userRef.set(newData);
+
+      // Optionally, you might want to update the local user information (e.g., clear currentUser)
+      // currentUser = null;
+      print('Deleted info');
+    } catch (e) {
+      print("Error deleting user details: $e");
+    }
+  }
+ }
