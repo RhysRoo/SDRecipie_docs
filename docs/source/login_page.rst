@@ -142,7 +142,7 @@ Upon creating a password the user has a given validation rule, that checks the g
     return true;
   }
   return false;
-}
+  }
 
 **Password Length Checker**
 
