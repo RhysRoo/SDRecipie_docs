@@ -229,6 +229,13 @@ The button dialogue box is a pop-up that appears on the screen when the user cli
       },
     );
   }
-}        
+  }
+
+- Controllers (The controllers are used to store the information that the user inputs into the input fields)
+
+- Validators (The validators are used to validate the information that the user inputs into the input fields)
+
+- Actions (The actions are the buttons that allow the user to cancel the operation or save the information that they have inputted)
+
 
 
