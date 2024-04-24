@@ -101,7 +101,7 @@ The register button allows the user to create a account if there not registered 
 This function is a validation rule that checks that the password is the same as the confirmation password.
 
 .. code-block:: dart
-    
+
     bool confirmPassword(final String passwordOne, final String passwordTwo) {
     if (samePassword(passwordOne, passwordTwo) &&
         passwordLengthCheck(passwordOne)) {
@@ -109,3 +109,44 @@ This function is a validation rule that checks that the password is the same as 
     }
     return false;
   }
+
+**Password Length Checker**
+
+Upon creating a password the user has a given validation rule, that checks the given length of the password. if the password doesnt match the given rule. The user will be assigned to try again until the rule has beem met.
+
+..code-block:: dart
+
+    bool passwordLengthCheck(final String passwordOne) {
+    if ((passwordOne.length >= 6 && passwordOne.length <= 200) &&
+        containsSymbol(passwordOne)) {
+      return true;
+    }
+    return false;
+  }
+
+**Other Validation Checkers**
+
+This validation rule checks if the user 
+
+..code-block:: dart
+
+    bool containsSymbol(String input) {
+    // Converts input to unicode
+    for (var char in input.runes) {
+      if (!isAlphaNumeric(char) && !isWhitespace(char)) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  bool isAlphaNumeric(int charCode) {
+    return (charCode >= 48 && charCode <= 57) || // 0-9
+        (charCode >= 65 && charCode <= 90) || // A-Z
+        (charCode >= 97 && charCode <= 122); // a-z
+  }
+
+  bool isWhitespace(int charCode) {
+    return charCode == 32; // space
+  }
+}
