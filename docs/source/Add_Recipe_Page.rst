@@ -57,26 +57,35 @@ You can enter the name of the recipe, the food restrictions, the ingredients, an
             ),
           ),
 
-*Unit input field*
+Adding Ingredients
+------------------
+
+The following code block represents a function in Dart named `_addIngredient`. This function is asynchronous, meaning it can perform operations that might take some time to complete, such as fetching data from an API or validating input.
 
 .. code-block:: dart
 
-    Future<void> _addIngredient() async {
-    String ingredient = _ingredientController.text;
-    String quantity = _quantityController.text;
+        Future<void> _addIngredient() async {
+                String ingredient = _ingredientController.text;
+                String quantity = _quantityController.text;
 
-    // Validation: Check if ingredient and quantity are not empty
-    if (await _validateIngredient(ingredient, quantity)) {
-      setState(() {
-        _ingredients.add({
-          'ingredient': ingredient,
-          'quantity': quantity.isNotEmpty ? '$quantity $_selectedUnit' : null,
-        });
-        _ingredientController.clear();
-        _quantityController.clear();
-        _selectedUnit = 'Select Unit';
-      });
-      print(_ingredients);
-    }
-  }
+                // Validation: Check if ingredient and quantity are not empty
+                if (await _validateIngredient(ingredient, quantity)) {
+                    setState(() {
+                        _ingredients.add({
+                            'ingredient': ingredient,
+                            'quantity': quantity.isNotEmpty ? '$quantity $_selectedUnit' : null,
+                        });
+                        _ingredientController.clear();
+                        _quantityController.clear();
+                        _selectedUnit = 'Select Unit';
+                    });
+                    print(_ingredients);
+                }
+        }
+
+The function `_addIngredient` retrieves the text from two text fields: one for the ingredient name and one for the quantity. It then validates these inputs using the `_validateIngredient` function. If the inputs are valid, the function updates the state of the application.
+
+In the updated state, a new ingredient is added to the `_ingredients` list. Each ingredient is a map with two keys: 'ingredient' and 'quantity'. The 'ingredient' key maps to the name of the ingredient, and the 'quantity' key maps to the quantity of the ingredient, combined with the selected unit. If no quantity is provided, the 'quantity' key maps to `null`.
+
+After adding the new ingredient, the function clears the text fields and resets the selected unit to 'Select Unit'. Finally, it prints the updated list of ingredients to the console.
 
