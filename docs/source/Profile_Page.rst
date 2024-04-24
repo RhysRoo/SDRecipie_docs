@@ -346,3 +346,5 @@ This function is used to delete the user's personal information from the databas
     }
   }
  }
+
+
