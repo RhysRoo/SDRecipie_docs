@@ -237,5 +237,39 @@ The button dialogue box is a pop-up that appears on the screen when the user cli
 
 - Actions (The actions are the buttons that allow the user to cancel the operation or save the information that they have inputted)
 
+Profile Manager
+---------------
+
+The profile manager is a class that is used to manage the user profile page. The profile manager is responsible for storing the user's personal information and loading the user's personal information. The profile manager is also responsible for deleting the user's personal information.
+
+.. code-block:: dart
+
+class ProfileManager {
+  late UserManager userManager;
+  late FirebaseAuth? auth = FirebaseAuth.instance;
+  late FirebaseFirestore firestore = FirebaseFirestore.instance;
+
+  ProfileManager({FirebaseAuth? auth, FirebaseFirestore? firestore}) {
+    this.auth = auth ?? FirebaseAuth.instance;
+    this.firestore = firestore ?? FirebaseFirestore.instance;
+    userManager = UserManager(auth: this.auth!, firestore: this.firestore);
+  }    
+
+**Init Values**
+
+When first entering the user profile page, by default it will dispalay N/A for all the fields. This is because the user has not inputted any information yet.
+
+.. code-block:: dart
+
+    // Set all fields to "N/A"
+      Map<String, dynamic> newData = {
+        'age': 'N/A',
+        'username': 'N/A',
+        'firstName': 'N/A',
+        'lastName': 'N/A',
+        'foodRestriction': 'N/A',
+        'bio': 'N/A'
+      };
 
 
+**
