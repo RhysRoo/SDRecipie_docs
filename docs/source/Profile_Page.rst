@@ -255,7 +255,7 @@ The profile manager is a class that is used to manage the user profile page. The
         userManager = UserManager(auth: this.auth!, firestore: this.firestore);
     }    
 
-**Init Values**
+**Initial Values**
 
 When first entering the user profile page, by default it will dispalay N/A for all the fields. This is because the user has not inputted any information yet.
 
@@ -272,4 +272,41 @@ When first entering the user profile page, by default it will dispalay N/A for a
       };
 
 
-**
+**getUserDeatails Function**
+
+This function is used to retrieve the user's personal information from the database. The function first gets the user's UID and then retrieves the user's personal information from the database using the UID.
+
+.. code-block:: dart
+
+    Future<Map<String, dynamic>?> getUserDetails() async {
+    try {
+      String? uid = await userManager.getCurrentUserUID();
+      DocumentSnapshot<Map<String, dynamic>> documentSnapshot =
+          await firestore.collection("UserDetails").doc(uid).get();
+
+      if (documentSnapshot.exists) {
+        return documentSnapshot.data();
+      } else {
+        print('Document does not exist');
+      }
+    } catch (e) {
+      print("Error retrieving user details: $e");
+    }
+    return null;
+  }
+
+**storeUserDetails Function**
+
+This function is used to store the user's personal information in the database. The function first gets the user's UID and then stores the user's personal information in the database using the UID.
+
+.. code-block:: dart
+
+    Future<void> storeUserDetails(UserModel user) async {
+    try {
+      String? uid = await userManager.getCurrentUserUID();
+      await firestore.collection("UserDetails").doc(uid).set(user.toJson());
+      print('User details stored successfully');
+    } catch (e) {
+      print("Error storing user details: $e");
+    }
+  }
