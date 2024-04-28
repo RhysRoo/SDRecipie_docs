@@ -1,7 +1,6 @@
 API
 ===
 
-.. autosummary::
-   :toctree: generated
-
-   lumache
+Heading 1
+---------
+hello heelo
