@@ -40,7 +40,7 @@ There are two ways to run the application:
 
      .. code-block:: bash
 
-        flutter run recipe_app
+        flutter run
 
 2. **Using the Debugger:**
 
