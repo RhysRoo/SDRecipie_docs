@@ -6,6 +6,17 @@ Page Overview
 
 The about us page is a page that tells the user about the scope of our mission with the app and the team behind it. It is a scrollable page with a header, a paragraph of text, and a team section with a picture of each team member and a short bio and a way to communicate with any member of the team through email.
 
+Functionality
+-------------
+
+The About Us Page includes the following functionality:
+
+- **Email Launch:** The `_launchEmail()` method is used to launch the default email app when the "Contact by email" option is tapped.It is implemented for several team members, each with their own email account.
+- **Page Structure:** Uses a 'Scaffold' widget with a 'AppBar' for navigation and a 'SingleChildScrollView' to allow scrolling across the content.
+- **Team Information:** Displays information about each team member, including their name, role, brief description, and an option to contact them via email.
+
+**The classes and functions that are relevant are summarised as follows:**
+
 Launch Email Functionality
 ---------------------
 
