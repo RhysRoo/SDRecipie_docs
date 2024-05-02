@@ -6,6 +6,18 @@ Introduction
 
 This is a FAQ page that allows users to ask questions and get answers. The questions and answers are stored locally in application. The user can add a question and answer, edit a question and answer. The user can also search for a question by typing in the search bar above all preset questions and answers. And press the seach button to send the query. 
 
+
+Functionality
+-------------
+
+The FAQ Page includes the following functionality:
+
+- **Search:** The search box located at the top of the page allows users to search for specific questions.
+- **Expansion Tiles:** Each question is displayed as an expansion tile, allowing users to expand to view the answer.
+- **Filtering:** As users type their query into the search field, the list of questions is dynamically filtered to show relevant results.
+
+**The classes and functions that are relevant are summarised as follows:**
+
 QAItem
 ------
 
