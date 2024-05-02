@@ -66,3 +66,4 @@ Table of Contents
    login_page
    Add_Recipe_Page
    home_page
+   main_page
