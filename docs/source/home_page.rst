@@ -6,6 +6,7 @@ Home Page
 
 Usage
 -----
+
 The application's home page acts as its main user interface, giving users access to a range of features and functionalities. Here's an overview of what it does:
 
 - **Navigation:** Users can navigate through different sections of the application using the app drawer or by watching the introductory video provided on the home page.
