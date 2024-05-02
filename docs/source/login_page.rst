@@ -1,10 +1,39 @@
 login Page
 ==========
 
-What to see
-----------
 
-On the login page, you are displayed with 2 input text boxes. These text fields allow the user to input an email address and password. If the login details don't match the backend (Firebase Auth), then the authentication will fail and the user will be prompted to try again.
+Introduction
+------------
+
+The log in page allows users to authenticate themselves in order to access the application's features and personalized content. 
+
+To use the login page:
+
+1. The user should enter their username or email address in the corresponding input field.
+2. Enter their password in the password input field.
+3. Click the "Log In" button to authenticate.
+
+Usage
+-----
+
+This section describes what the log in folder does:
+ 
+- **Authentication:** Users can create accounts log in using their email address along with their password. The RegisterLoginManager page contains methods for signing in and registering users with Firebase Authentication. 
+- **Error Handling:** The login page handles various authentication such as incorrect username/password or network errors.
+- **Navigation:** After successful authentication, users are typically redirected to the application's main dashboard or home screen.
+
+
+Maintenance
+===========
+
+The Maintenance section describes how the software achieves its functionality and how developers can maintain and extend it. 
+
+The login folder has more than three files in it. Here are the uses of the most important files:
+- `Login_page.dart`: This file represents the UI of the login page. It includes text fields for users to input their email and password, as well as buttons for signing in with email/password, Google, and Apple.
+  - `Register_page.dart`: Similar to the `Login_page.dart`, this file represents the UI of the registration page. It allows users to create a new account by providing their email and password.
+  - `register_login_manager.dart`: This file contains methods for signing in and registering users. It handles Firebase authentication and error handling.
+
+**The classes and functions that are relevant are summarised as follows:**
 
 Authentication Page Class
 ------------------------
