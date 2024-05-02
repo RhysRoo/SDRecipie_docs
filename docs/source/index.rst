@@ -65,3 +65,4 @@ Table of Contents
    About_Us_Page
    login_page
    Add_Recipe_Page
+   home_page
