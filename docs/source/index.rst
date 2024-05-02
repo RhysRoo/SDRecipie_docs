@@ -59,7 +59,7 @@ Table of Contents
 
    Profile_Page
    api
-   recipe_generator
+   recipe_generation_page
    Ingredients_Manager
    FAQ_Page
    About_Us_Page
