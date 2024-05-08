@@ -21,11 +21,63 @@ The `RecipeService` class interacts with the Edamam API to fetch recipes based o
 
 - **fetchRecipes():** Fetches recipes from the Edamam API using HTTP GET requests and returns a list of dynamic objects representing recipe data.
 
+.. codeblock:: dart
+     Future<List<dynamic>> fetchRecipes(List<String> ingredients) async {
+    const String apiId = '87adcf60';
+    const String apiKey = 'APIKEY';
+
+    String ingredientQuery = ingredients.join(',');
+
+    String url = 'https://api.edamam.com/search?app_id=$apiId&app_key=$apiKey&q=$ingredientQuery&to=10';
+
+    try {
+      final response = await http.get(Uri.parse(url));
+      if (response.statusCode == 200) {
+        Map<String, dynamic> data = json.decode(response.body);
+        List<dynamic> recipes = data['hits'];
+        return recipes;
+      } else {
+        throw Exception('Failed to load recipes');
+      }
+    } catch (e) {
+      print(e.toString());
+      return [];
+    }
+  }
+
+In this code block, the `fetchRecipes()` method fetches recipes from the Edamam API based on the user's selected ingredients(Saved in from the ingredients manager page). It constructs a URL with the API ID, API key, and user ingredients, sending an HTTP GET request to the API. after this it parses the response data to extract the recipe information.
+
 - **fetchRecipesBasedOnUserIngredients():** Fetches recipes from the Edamam API based on the user's selected ingredients.
 
 - **getRecipeNames():** Retrieves the names of recipes generated based on user ingredients.
 
+.. codeblock::
+      Future<List<String>> getRecipeNames() async {
+    List<dynamic> recipes = await fetchRecipesBasedOnUserIngredients();
+    List<String> labels = [];
+
+    for (int i = 0; i < recipes.length && i < 5; i++) {
+      Map<String, dynamic> recipe = recipes[i]['recipe'];
+      labels.add(recipe['label']);
+    }
+    return labels;
+  } 
+
 - **getRecipeUrls():** Retrieves the URLs of recipes generated based on user ingredients.
+
+.. codeblock:: dart
+      Future<List<String>> getRecipeUrls() async {
+    List<dynamic> recipes = await fetchRecipesBasedOnUserIngredients();
+    List<String> urls = [];
+
+    for (int i = 0; i < recipes.length && i < 5; i++) {
+      Map<String, dynamic> recipe = recipes[i]['recipe'];
+      urls.add(recipe['url']);
+    }
+    return urls;
+  }
+
+The `getRecipeUrls()` method retrieves the URLs of recipes generated based on the user's selected ingredients. It calls the `fetchRecipesBasedOnUserIngredients()` method to fetch recipes, then extracts the URLs from the response data and returns them as a list of strings.
 
 Generation Page (generation_page.dart)
 --------------------------------------
