@@ -42,8 +42,8 @@ The `RecipeService` class interacts with the Edamam API to fetch recipes based o
     } catch (e) {
       print(e.toString());
       return [];
-    }
-  }
+         }
+       }
 
 In this code block, the `fetchRecipes()` method fetches recipes from the Edamam API based on the user's selected ingredients(Saved in from the ingredients manager page). It constructs a URL with the API ID, API key, and user ingredients, sending an HTTP GET request to the API. after this it parses the response data to extract the recipe information.
 
@@ -61,7 +61,7 @@ In this code block, the `fetchRecipes()` method fetches recipes from the Edamam 
       labels.add(recipe['label']);
     }
     return labels;
-  } 
+       } 
 
 - **getRecipeUrls():** Retrieves the URLs of recipes generated based on user ingredients.
 
@@ -75,7 +75,7 @@ In this code block, the `fetchRecipes()` method fetches recipes from the Edamam 
       urls.add(recipe['url']);
     }
     return urls;
-  }
+       }
 
 The `getRecipeUrls()` method retrieves the URLs of recipes generated based on the user's selected ingredients. It calls the `fetchRecipesBasedOnUserIngredients()` method to fetch recipes, then extracts the URLs from the response data and returns them as a list of strings.
 
