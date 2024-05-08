@@ -51,7 +51,7 @@ In this code block, the `fetchRecipes()` method fetches recipes from the Edamam 
 
 - **getRecipeNames():** Retrieves the names of recipes generated based on user ingredients.
 
-.. codeblock::
+.. codeblock:: dart
       Future<List<String>> getRecipeNames() async {
     List<dynamic> recipes = await fetchRecipesBasedOnUserIngredients();
     List<String> labels = [];
