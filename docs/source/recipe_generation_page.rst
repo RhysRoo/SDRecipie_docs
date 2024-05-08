@@ -22,6 +22,7 @@ The `RecipeService` class interacts with the Edamam API to fetch recipes based o
 - **fetchRecipes():** Fetches recipes from the Edamam API using HTTP GET requests and returns a list of dynamic objects representing recipe data.
 
 .. codeblock:: dart
+
      Future<List<dynamic>> fetchRecipes(List<String> ingredients) async {
     const String apiId = '87adcf60';
     const String apiKey = 'APIKEY';
@@ -52,6 +53,7 @@ In this code block, the `fetchRecipes()` method fetches recipes from the Edamam 
 - **getRecipeNames():** Retrieves the names of recipes generated based on user ingredients.
 
 .. codeblock:: dart
+
       Future<List<String>> getRecipeNames() async {
     List<dynamic> recipes = await fetchRecipesBasedOnUserIngredients();
     List<String> labels = [];
@@ -66,6 +68,7 @@ In this code block, the `fetchRecipes()` method fetches recipes from the Edamam 
 - **getRecipeUrls():** Retrieves the URLs of recipes generated based on user ingredients.
 
 .. codeblock:: dart
+
       Future<List<String>> getRecipeUrls() async {
     List<dynamic> recipes = await fetchRecipesBasedOnUserIngredients();
     List<String> urls = [];
