@@ -365,6 +365,49 @@ Ingredient Manager Tests (Ref UR 4)
      - True
      - 
 
+Open Food Api Tests (Ref UR 4, 8)
+--------------------------------
+
+.. list-table:: Open Food Api Tests
+   :widths: 5 20 20 10 35
+   :header-rows: 1
+
+   * - ID
+     - Function
+     - Test Inputs
+     - Result
+     - Description to meet specification
+   * - 1
+     - ingredientAPICheck()
+     - ‘eggs’
+     - True
+     - SR Met: Validates ingredient names (UR 4 g).
+   * - 2
+     - ingredientAPICheck()
+     - ‘msg’
+     - True
+     - SR Met (UR 8 c): Validates recipe’s ingredient names.
+   * - 3
+     - ingredientAPICheck()
+     - ‘banana’
+     - True
+     - 
+   * - 4
+     - ingredientAPICheck()
+     - ‘nullwhjq’
+     - False
+     - 
+   * - 5
+     - ingredientAPICheck()
+     - ‘’
+     - False
+     - 
+   * - 6
+     - ingredientAPICheck()
+     - ‘dwjfedfeqgwegewg’
+     - False
+     - 
+
 API Search Test (Ref UR 4)
 ----------------------------
 
