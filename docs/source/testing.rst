@@ -2,7 +2,7 @@ Testing
 ========
 
 Functional Requirements
-----------------------
+------------------------
 
 Login UI and Register_Login_Manager Tests  (Ref UR 1 and 2)
 ------------------------------------------------------------
