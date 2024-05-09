@@ -55,10 +55,9 @@ Table of Contents
 =================
 
 .. toctree::
-   :maxdepth: 8
+   :maxdepth: 10
 
    Profile_Page
-   api
    recipe_generation_page
    Ingredients_Manager
    FAQ_Page
@@ -67,3 +66,4 @@ Table of Contents
    Add_Recipe_Page
    home_page
    main_page
+   testing
