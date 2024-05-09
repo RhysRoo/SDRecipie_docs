@@ -132,7 +132,6 @@ Login UI and Register_Login_Manager Tests  (Ref UR 1 and 2)
 
 Beta-Testing (Ref UR 1 and 2)
 ----------------------------
-
 .. list-table:: Login UI and Register_Login_Manager Tests (Ref UR 1 and 2)
    :widths: 5 25 25 25 25
    :header-rows: 1
