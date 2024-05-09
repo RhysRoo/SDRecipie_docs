@@ -202,3 +202,18 @@ This function is used to rate a recipe from 0 - 5 stars.
                       color: Colors.orange,
                     ),
                   ),
+
+**Add Recipe Manager**
+.. code-block:: dart
+  class AddRemoveRecipeManager {
+  late FirebaseAuth? auth;
+  late FirebaseFirestore firestore;
+  late UserManager userManager;
+
+  AddRemoveRecipeManager({FirebaseAuth? auth, FirebaseFirestore? firestore}) {
+    this.auth = auth ?? FirebaseAuth.instance;
+    this.firestore = firestore ?? FirebaseFirestore.instance;
+    userManager = UserManager(auth: this.auth!, firestore: this.firestore);
+  }
+
+On the add recipe manager class, there consists of 3 variables that are declared. The first variable is the auth variable which is of type FirebaseAuth. The second variable is the firestore variable which is of type FirebaseFirestore. This was completed to alllow easier mocking of classes for automated testing.
