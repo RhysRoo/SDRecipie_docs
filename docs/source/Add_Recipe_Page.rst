@@ -169,7 +169,9 @@ ShowIngredients function
       },
     );
   }
-    
+
+Rating System
+The add recipes also consits of the rating system which displays stars on the select recipe where the user can rate the recipe form 0 - 5 stars 
 
 **Delete Recipes**
 
