@@ -372,7 +372,7 @@ See the :doc:`Ingredients_Manager` for more information.
      - 
 
 Open Food Api Tests (Ref UR 4, 8)
---------------------------------
+----------------------------------
 See the :doc:`Ingredients_Manager` for more information.
 
 .. list-table:: Open Food Api Tests
