@@ -365,7 +365,7 @@ Ingredient Manager Tests (Ref UR 4)
      - True
      - 
 
-Api Search Test (Ref UR 4)
+API Search Test (Ref UR 4)
 ----------------------------
 
 .. list-table:: Api Search Test (Ref UR 4)
