@@ -1,55 +1,258 @@
 Testing
 ========
 
-Login UI and Register_Login_Manager Tests
------------------------------------------
+Login UI and Register_Login_Manager Tests  (Ref UR 1 and 2)
+------------------------------------------------------------
 
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| ID | Procedure                   | Test Inputs                         | Result              | Description to Meet Specification                                                                                 |
-+====+=============================+=====================================+=====================+==================================================================================================================+
-| 1  | LogIn onTap Test {}         | pumpWidget onTap {}                 | Call is true        | FR Met: Trigger authentication and function is initiated (UR 1 a).                                              |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 2  | LogIn onTap Existence Test {}| pumpWidget onTap {}                 | Widget Exists       |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 3  | showOSError()               | pumpWidget with OSError function applied | Notification is generated when Android user attempts to use Apple Sign In |SR Met: Error messages elicited to client interface (UR 1 f)  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 4  | showOSErrors()              | pumpWidget with OSError function applied | Notification is generated to display error messages when creating an account | SR Met: Error messages elicited to client interface when invalid information entered (UR 1 f). |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 5  | checkEmailValidity()        | 'example@example.com'               | True                | a)  SR Met: User can input, email, passwords, and required information (UR 1, 2 d, e, f). b) Improved SR: Validation Rules. Password length above 6 characters and no more than 255. Must include 1 @ character. c) All proposed functions are shown below: |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 6  | checkEmailValidity()        | 'a@b.c'                             | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 7  | checkEmailValidity()        | 'example.com'                       | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 8  | checkEmailValidity()        | 'ex@mple@example.com'               | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 9  | checkEmailValidity()        | Long email of over 255 with @example.com | False          |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 10 | confirmPassword()           | 'jam!es123', 'james!es123'          | True                | Contains symbol. Length and Match                                                                                |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 11 | confirmPassword()           | 'ja!23', 'ja!23'                    | False               | Length not retained                                                                                               |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 12 | confirmPassword()           | 'jam!es123', 'dhsdjshgf'            | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 13 | confirmPassword()           | 'jafjhsf', 'jafjhsf'                | False               | No Symbol                                                                                                        |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 14 | passwordLengthCheck()       | 'NoSymbolPassword123'               | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 15 | passwordLengthCheck()       | ''                                  | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 16 | passwordLengthCheck()       | Password Above 255 characters       | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 17 | passwordLengthCheck()       | 'Short'                             | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 18 | passwordLengthCheck()       | 'jam!es123'                         | True                |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 19 | containsSymbol()            | '#'                                 | True                |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 20 | containsSymbol()            | 'password'                          | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 21 | isWhiteSpace()              | ' '                                 | True                |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 22 | isWhiteSpace()              | 'world'                             | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
-| 23 | isWhiteSpace()              | null                                | False               |                                                                                                                  |
-+----+-----------------------------+-------------------------------------+---------------------+------------------------------------------------------------------------------------------------------------------+
+.. list-table:: Login UI and Register_Login_Manager Tests (Ref UR 1 and 2)
+   :widths: 5 25 25 25 25
+   :header-rows: 1
+
+   * - ID
+     - Procedure
+     - Test Inputs
+     - Result
+     - Description to Meet Specification
+   * - 1
+     - LogIn onTap Test {}
+     - pumpWidget onTap {}
+     - Call is true
+     - FR Met: Trigger authentication and function is initiated (UR 1 a).
+   * - 2
+     - LogIn onTap Existence Test {}
+     - pumpWidget onTap {}
+     - Widget Exists
+     - 
+   * - 3
+     - showOSError()
+     - pumpWidget with OSError function applied
+     - Notification is generated when Android user attempts to use Apple Sign In
+     - SR Met: Error messages elicited to client interface (UR 1 f)
+   * - 4
+     - showOSErrors()
+     - pumpWidget with OSError function applied
+     - Notification is generated to display error messages when creating an account
+     - SR Met: Error messages elicited to client interface when invalid information entered (UR 1 f).
+   * - 5
+     - checkEmailValidity()
+     - 'example@example.com'
+     - True
+     - SR Met: User can input, email, passwords, and required information (UR 1, 2 d, e, f). b) Improved SR: Validation Rules. Password length above 6 characters and no more than 255. Must include 1 @ character. c) All proposed functions are shown below:
+   * - 6
+     - checkEmailValidity()
+     - 'a@b.c'
+     - False
+     - 
+   * - 7
+     - checkEmailValidity()
+     - 'example.com'
+     - False
+     - 
+   * - 8
+     - checkEmailValidity()
+     - 'ex@mple@example.com'
+     - False
+     - 
+   * - 9
+     - checkEmailValidity()
+     - Long email of over 255 with @example.com
+     - False
+     - 
+   * - 10
+     - confirmPassword()
+     - 'jam!es123', 'james!es123'
+     - True
+     - Contains symbol. Length and Match
+   * - 11
+     - confirmPassword()
+     - 'ja!23', 'ja!23'
+     - False
+     - Length not retained
+   * - 12
+     - confirmPassword()
+     - 'jam!es123', 'dhsdjshgf'
+     - False
+     - 
+   * - 13
+     - confirmPassword()
+     - 'jafjhsf', 'jafjhsf'
+     - False
+     - No Symbol
+   * - 14
+     - passwordLengthCheck()
+     - 'NoSymbolPassword123'
+     - False
+     - 
+   * - 15
+     - passwordLengthCheck()
+     - ''
+     - False
+     - 
+   * - 16
+     - passwordLengthCheck()
+     - Password Above 255 characters
+     - False
+     - 
+   * - 17
+     - passwordLengthCheck()
+     - 'Short'
+     - False
+     - 
+   * - 18
+     - passwordLengthCheck()
+     - 'jam!es123'
+     - True
+     - 
+   * - 19
+     - containsSymbol()
+     - '#'
+     - True
+     - 
+   * - 20
+     - containsSymbol()
+     - 'password'
+     - False
+     - 
+   * - 21
+     - isWhiteSpace()
+     - ' '
+     - True
+     - 
+   * - 22
+     - isWhiteSpace()
+     - 'world'
+     - False
+     - 
+   * - 23
+     - isWhiteSpace()
+     - null
+     - False
+     - 
+
+Beta-Testing (Ref UR 1 and 2)
+----------------------------
+
+.. list-table:: Login UI and Register_Login_Manager Tests (Ref UR 1 and 2)
+   :widths: 5 25 25 25 25
+   :header-rows: 1
+
+   * - ID
+     - Procedure
+     - Test Inputs
+     - Result
+     - Description to Meet Specification
+   * - 1
+     - LogIn onTap Test {}
+     - pumpWidget onTap {}
+     - Call is true
+     - FR Met: Trigger authentication and function is initiated (UR 1 a).
+   * - 2
+     - LogIn onTap Existence Test {}
+     - pumpWidget onTap {}
+     - Widget Exists
+     - 
+   * - 3
+     - showOSError()
+     - pumpWidget with OSError function applied
+     - Notification is generated when Android user attempts to use Apple Sign In
+     - SR Met: Error messages elicited to client interface (UR 1 f)
+   * - 4
+     - showOSErrors()
+     - pumpWidget with OSError function applied
+     - Notification is generated to display error messages when creating an account
+     - SR Met: Error messages elicited to client interface when invalid information entered (UR 1 f).
+   * - 5
+     - checkEmailValidity()
+     - 'example@example.com'
+     - True
+     - SR Met: User can input, email, passwords, and required information (UR 1, 2 d, e, f). b) Improved SR: Validation Rules. Password length above 6 characters and no more than 255. Must include 1 @ character. c) All proposed functions are shown below:
+   * - 6
+     - checkEmailValidity()
+     - 'a@b.c'
+     - False
+     - 
+   * - 7
+     - checkEmailValidity()
+     - 'example.com'
+     - False
+     - 
+   * - 8
+     - checkEmailValidity()
+     - 'ex@mple@example.com'
+     - False
+     - 
+   * - 9
+     - checkEmailValidity()
+     - Long email of over 255 with @example.com
+     - False
+     - 
+   * - 10
+     - confirmPassword()
+     - 'jam!es123', 'james!es123'
+     - True
+     - Contains symbol. Length and Match
+   * - 11
+     - confirmPassword()
+     - 'ja!23', 'ja!23'
+     - False
+     - Length not retained
+   * - 12
+     - confirmPassword()
+     - 'jam!es123', 'dhsdjshgf'
+     - False
+     - 
+   * - 13
+     - confirmPassword()
+     - 'jafjhsf', 'jafjhsf'
+     - False
+     - No Symbol
+   * - 14
+     - passwordLengthCheck()
+     - 'NoSymbolPassword123'
+     - False
+     - 
+   * - 15
+     - passwordLengthCheck()
+     - ''
+     - False
+     - 
+   * - 16
+     - passwordLengthCheck()
+     - Password Above 255 characters
+     - False
+     - 
+   * - 17
+     - passwordLengthCheck()
+     - 'Short'
+     - False
+     - 
+   * - 18
+     - passwordLengthCheck()
+     - 'jam!es123'
+     - True
+     - 
+   * - 19
+     - containsSymbol()
+     - '#'
+     - True
+     - 
+   * - 20
+     - containsSymbol()
+     - 'password'
+     - False
+     - 
+   * - 21
+     - isWhiteSpace()
+     - ' '
+     - True
+     - 
+   * - 22
+     - isWhiteSpace()
+     - 'world'
+     - False
+     - 
+   * - 23
+     - isWhiteSpace()
+     - null
+     - False
+     - 
