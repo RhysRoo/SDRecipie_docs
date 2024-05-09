@@ -141,36 +141,25 @@ Beta-Testing (Ref UR 1 and 2)
    :widths: 5 25 25 25 25
    :header-rows: 1
 
-   * - ID
-     - Procedure
-     - Test Inputs
-     - Result
-     - Description to Meet Specification
-   * - 1
-     - Trigger Sign Up Process and Complete
-     - abigailNorman1@gmail.com, Logintest1
-     - Pass
-     - FR Met: Ability to initiate account creation, upon receiving valid user details. (UR 2 a)\nSR: System should store username and password into backend database (UR 2 g)
-   * - 2
-     - Trigger Sign In Process and Complete
-     - alex_pearso@the_pearsons.com, Logintest2
-     - Pass
-     - FR Met: Ability to initiate create account process (UR 1 a)
-   * - 3
-     - Halt Sign In Process
-     - alex_pearso@the_pearsons.com, Activation of signIn rather than signUp completion and then back to signUp screen
-     - Fail
-     - FR Met: System should terminate an ongoing authentication process, providing an immediate halt to user access validation. (UR 2 b).\nFR Change: Doesn’t return to previous sign In details after halt of sign Up process (UR 2 c).
-   * - 4
-     - Trigger authentication and Halt authentication
-     - abigailNorman1@gmail.com, Activation of signUp rather than signIn
-     - Pass
-     - FR Met: Should terminate an ongoing authentication process, providing an immediate halt to user access validation (UR 1 b, f).
-   * - 5
-     - Trigger authentication and Halt authentication, Attempt to continue the sign in process
-     - alex_pearso@the_pearsons.com, Activation of signUp rather than signIn and then back to signIn screen
-     - Fail
-     - FR Change: Doesn’t return to previous log in details (UR 1 c)
++----+-----------------------------------------+-------------------------------------------+--------+-------------------------------------------------------------------------------------------------------------------+
+| id | Procedure                               | Test Inputs                               | Result | Description to meet specification                                                                                 |
++====+=========================================+===========================================+========+===================================================================================================================+
+| 1  | Trigger Sign Up Process and Complete    | abigailNorman1@gmail.com                  | Pass   | FR Met: Ability to initiate account creation, upon receiving valid user details. (UR 2 a)                          |
+|    |                                         | Logintest1                                |        | SR: System should store username and password into backend database (UR 2 g)                                       |
++----+-----------------------------------------+-------------------------------------------+--------+-------------------------------------------------------------------------------------------------------------------+
+| 2  | Trigger Sign In Process and Complete    | alex_pearso@the_pearsons.com              | Pass   | FR Met: Ability to initiate create account process (UR 1  a)                                                       |
+|    |                                         | Logintest2                                |        |                                                                                                                   |
++----+-----------------------------------------+-------------------------------------------+--------+-------------------------------------------------------------------------------------------------------------------+
+| 3  | Halt Sign In Process                    | alex_pearso@the_pearsons.com              | Fail   | FR Met: System should terminate an ongoing authentication process, providing an immediate halt to user access      |
+|    |                                         | Activation of signIn rather than signUp   |        | validation. (UR 2 b).                                                                                             |
+|    |                                         | completion and then back to signUp screen |        | FR Change: Doesn’t return to previous sign In details after halt of sign Up process  (UR 2 c).                     |
++----+-----------------------------------------+-------------------------------------------+--------+-------------------------------------------------------------------------------------------------------------------+
+| 4  | Trigger authentication and Halt         | abigailNorman1@gmail.com                  | Pass   | FR Met: Should terminate an ongoing authentication process, providing an immediate halt to user access validation  |
+|    | authentication                          | Activation of signUp rather than signIn   |        | (UR 1 b, f).                                                                                                      |
++----+-----------------------------------------+-------------------------------------------+--------+-------------------------------------------------------------------------------------------------------------------+
+| 5  | Trigger authentication and Halt         | alex_pearso@the_pearsons.com              | Fail   | FR Change: Doesn’t return to previous log in details (UR 1 c)                                                      |
+|```
+
 
  
 Profile Manager Test (Ref UR 3)
