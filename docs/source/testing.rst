@@ -135,6 +135,7 @@ See the :doc:`login_page` for more information.
 
 Beta-Testing (Ref UR 1 and 2)
 ------------------------------
+See the :doc:`login_page` for more information.
 
 .. list-table:: Login UI and Register_Login_Manager Tests (Ref UR 1 and 2)
    :widths: 5 25 25 25 25
@@ -174,6 +175,7 @@ Beta-Testing (Ref UR 1 and 2)
  
 Profile Manager Test (Ref UR 3)
 -------------------------------
+See the :doc:`Profile_Page` for more information.
 
 .. list-table:: Profile Manager Test (Ref UR 3)
    :widths: 5 25 25 25 25
@@ -237,6 +239,7 @@ Profile Manager Test (Ref UR 3)
 
 User Manager Test (Rf UR 3)
 ---------------------------
+See the :doc:`Profile_Page` for more information.
 
 .. list-table:: User Manager Test (Rf UR 3)
    :widths: 5 25 25 25 25
@@ -284,6 +287,7 @@ Ingredient Manager Tests (Ref UR 4)
 .. list-table:: Ingredient Manager Tests (Ref UR 4)
    :widths: 5 25 25 25 25
    :header-rows: 1
+   See the :doc:`Ingredients_Manager` for more information.
 
    * - ID
      - Function Name
@@ -368,6 +372,7 @@ Ingredient Manager Tests (Ref UR 4)
 
 Open Food Api Tests (Ref UR 4, 8)
 --------------------------------
+See the :doc:`Ingredients_Manager` for more information.
 
 .. list-table:: Open Food Api Tests
    :widths: 5 20 20 10 35
@@ -415,6 +420,7 @@ API Search Test (Ref UR 4)
 .. list-table:: Api Search Test (Ref UR 4)
    :widths: 5 25 25 25 25
    :header-rows: 1
+   See the :doc:`recipe_generation_page` for more information.
 
    * - ID
      - Function
@@ -443,6 +449,7 @@ Food Notification Manager Tests (Ref UR 4,5)
 .. list-table:: Food Notification Manager Tests (Ref UR 4,5)
    :widths: 5 25 25 25 25
    :header-rows: 1
+   See the :doc:`home_page` for more information.
 
    * - ID
      - Function Name
@@ -481,6 +488,7 @@ Add Recipe Manager Tests (Ref UR 8)
 .. list-table:: Add Recipe Manager Tests (Ref UR 8)
    :widths: 5 20 20 10 25
    :header-rows: 1
+   See the :doc:`Add_Recipe_Page` for more information.
 
    * - ID
      - Function Name
@@ -530,6 +538,7 @@ FAQ Page Test (Ref UR 9)
 .. list-table:: FAQ Page Test (Ref UR 9)tle
    :widths: 5 25 25 25 25
    :header-rows: 1
+   See the :doc:`FAQ_Page` for more information.
 
    * - ID
      - Function
