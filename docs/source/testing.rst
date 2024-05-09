@@ -423,7 +423,6 @@ See the :doc:`recipe_generation_page` for more information.
    :widths: 5 25 25 25 25
    :header-rows: 1
    
-
    * - ID
      - Function
      - Test Inputs
@@ -440,10 +439,15 @@ See the :doc:`recipe_generation_page` for more information.
      - Returns results.length > 1 and first recommendationLabel is ‘Tomato Soup’
      - FR Changed: Dynamic generation of top 5 recipes (UR 4 a, g). FR Met: User input, ingredient name and ingredient expiry date to generate recipes (UR 4 b) SR Change: Personalised Engine tailored met (UR 4 f).
    * - 3
-     - testPerformance()
-     - 
-     - True
-     - NF SR: Recipes should be generated in less than a few seconds.
+     - fetchRecipeBasedOnUserIngredients()
+     - [[‘Tomato’], [‘Onion’]]
+     - Less than 5s 
+     - NF SR Changed: Recipes should be generated in less than 5 seconds.
+   * - 4
+     - fetchRecipeBasedOnUserIngredients()
+     - [[‘Tomato’]]
+     - Less than 5s 
+     -
 
 Food Notification Manager Tests (Ref UR 4,5)
 --------------------------------------------
