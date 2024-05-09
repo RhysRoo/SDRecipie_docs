@@ -6,7 +6,7 @@ Functional Requirements
 
 Login UI and Register_Login_Manager Tests  (Ref UR 1 and 2)
 ------------------------------------------------------------
-See the :doc:`login_page` here
+See the :doc:`login_page` for more information.
 
 .. list-table:: Login UI and Register_Login_Manager Tests (Ref UR 1 and 2)
    :widths: 5 25 25 25 25
