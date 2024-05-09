@@ -11,7 +11,7 @@ Login UI and Register_Login_Manager Tests  (Ref UR 1 and 2)
    :widths: 5 25 25 25 25
    :header-rows: 1
 
-   * - ID (Needs to be redone as duplicate values from requirement table)
+   * - ID
      - Procedure
      - Test Inputs
      - Result
