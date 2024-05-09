@@ -40,12 +40,7 @@ Login UI and Register_Login_Manager Tests  (Ref UR 1 and 2)
      - checkEmailValidity()
      - 'example@example.com'
      - True
-     - SR Met: User can input, email, passwords, and required information (UR 1, 2 d, e, f).
-
-Improved SR: Validation Rules. Password length above 6 characters and no more than 255. Must include 1 @ character.
-
-All proposed functions are shown below:
-
+     - SR Met: User can input, email, passwords, and required information (UR 1, 2 d, e, f). Improved SR: Validation Rules. Password length above 6 characters and no more than 255. Must include 1 @ character. All proposed functions are shown below:
    * - 6
      - checkEmailValidity()
      - 'a@b.c'
