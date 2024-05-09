@@ -3,8 +3,10 @@ Testing
 
 Functional Requirements
 ----------------------
+
 Login UI and Register_Login_Manager Tests  (Ref UR 1 and 2)
 ------------------------------------------------------------
+
 .. list-table:: Login UI and Register_Login_Manager Tests (Ref UR 1 and 2)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -137,6 +139,7 @@ All proposed functions are shown below:
 
 Beta-Testing (Ref UR 1 and 2)
 ----------------------------
+
 .. list-table:: Login UI and Register_Login_Manager Tests (Ref UR 1 and 2)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -164,6 +167,7 @@ Beta-Testing (Ref UR 1 and 2)
  
 Profile Manager Test (Ref UR 3)
 -------------------------------
+
 .. list-table:: Profile Manager Test (Ref UR 3)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -226,6 +230,7 @@ Profile Manager Test (Ref UR 3)
 
 User Manager Test (Rf UR 3)
 ---------------------------
+
 .. list-table:: User Manager Test (Rf UR 3)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -268,6 +273,7 @@ User Manager Test (Rf UR 3)
 
 Ingredient Manager Tests (Ref UR 4)
 -----------------------------------
+
 .. list-table:: Ingredient Manager Tests (Ref UR 4)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -355,6 +361,7 @@ Ingredient Manager Tests (Ref UR 4)
 
 Api Search Test (Ref UR 4)
 ----------------------------
+
 .. list-table:: Api Search Test (Ref UR 4)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -382,6 +389,7 @@ Api Search Test (Ref UR 4)
 
 Food Notification Manager Tests (Ref UR 4,5)
 --------------------------------------------
+
 .. list-table:: Food Notification Manager Tests (Ref UR 4,5)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -419,6 +427,7 @@ Food Notification Manager Tests (Ref UR 4,5)
 
 Add Recipe Manager Tests (Ref UR 8)
 -----------------------------------
+
 .. list-table:: Add Recipe Manager Tests (Ref UR 8)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -474,6 +483,7 @@ recipeName: Josh’s recipes’,
 
 FAQ Page Test (Ref UR 9)
 -------------------------
+
 .. list-table:: FAQ Page Test (Ref UR 9)tle
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -496,6 +506,7 @@ FAQ Page Test (Ref UR 9)
 
 Non-Functional Test:
 -----------------------------------
+
 .. list-table:: Non-Functional Test
    :widths: 5 25 25 25 25
    :header-rows: 1
