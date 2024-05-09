@@ -283,11 +283,12 @@ See the :doc:`Profile_Page` for more information.
 
 Ingredient Manager Tests (Ref UR 4)
 -----------------------------------
+See the :doc:`Ingredients_Manager` for more information.
 
 .. list-table:: Ingredient Manager Tests (Ref UR 4)
    :widths: 5 25 25 25 25
    :header-rows: 1
-   See the :doc:`Ingredients_Manager` for more information.
+   
 
    * - ID
      - Function Name
@@ -416,11 +417,12 @@ See the :doc:`Ingredients_Manager` for more information.
 
 API Search Test (Ref UR 4)
 ----------------------------
+See the :doc:`recipe_generation_page` for more information.
 
 .. list-table:: Api Search Test (Ref UR 4)
    :widths: 5 25 25 25 25
    :header-rows: 1
-   See the :doc:`recipe_generation_page` for more information.
+   
 
    * - ID
      - Function
@@ -445,11 +447,12 @@ API Search Test (Ref UR 4)
 
 Food Notification Manager Tests (Ref UR 4,5)
 --------------------------------------------
+See the :doc:`home_page` for more information.
 
 .. list-table:: Food Notification Manager Tests (Ref UR 4,5)
    :widths: 5 25 25 25 25
    :header-rows: 1
-   See the :doc:`home_page` for more information.
+   
 
    * - ID
      - Function Name
@@ -484,11 +487,12 @@ Food Notification Manager Tests (Ref UR 4,5)
 
 Add Recipe Manager Tests (Ref UR 8)
 -----------------------------------
+See the :doc:`Add_Recipe_Page` for more information.
 
 .. list-table:: Add Recipe Manager Tests (Ref UR 8)
    :widths: 5 20 20 10 25
    :header-rows: 1
-   See the :doc:`Add_Recipe_Page` for more information.
+   
 
    * - ID
      - Function Name
@@ -534,12 +538,12 @@ Add Recipe Manager Tests (Ref UR 8)
 
 FAQ Page Test (Ref UR 9)
 -------------------------
+See the :doc:`FAQ_Page` for more information.
 
 .. list-table:: FAQ Page Test (Ref UR 9)tle
    :widths: 5 25 25 25 25
    :header-rows: 1
-   See the :doc:`FAQ_Page` for more information.
-
+   
    * - ID
      - Function
      - Test Inputs
