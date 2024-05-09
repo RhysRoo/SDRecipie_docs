@@ -476,15 +476,7 @@ Add Recipe Manager Tests (Ref UR 8)
    * - 7
      - getAllRecipes()
      - {‘ingredients’: {‘ingredient1’, ‘ingredient2’, ‘ingredient3’,
-recipeName: Josh’s recipes’,
-‘Rating’: null,
-‘foodRestriction’:’Vegan’,
-‘createdAt’; Datetime.now()} with ‘dummyUID’
      - {‘ingredients’: {‘ingredient1’, ‘ingredient2’, ‘ingredient3’,
-‘recipeName: Josh’s recipes’,
-‘Rating’: null,
-‘foodRestriction’:’Vegan’,
-‘createdAt’; Datetime.now()}
      - 
 
 FAQ Page Test (Ref UR 9)
