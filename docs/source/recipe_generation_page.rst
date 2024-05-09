@@ -92,6 +92,8 @@ The 'GenerationPage' widget shows the created recipes and allows users to update
 
 - **Content Display:** Displays the generated recipe titles and their corresponding URLs.
 
+
+
 Recipe Model (recipe.dart)
 ---------------------------
 The `Recipe` and `Ingredient` classes represent recipe data fetched from the Edamam API. They provide the following attributes and functionalities:
@@ -101,3 +103,34 @@ The `Recipe` and `Ingredient` classes represent recipe data fetched from the Eda
 - **Ingredient Class:** Represents an ingredient item within a recipe with attributes like text, quantity, unit, and food.
 
 - **fromJson() Constructor:** Parses JSON data into instances of the `Recipe` and `Ingredient` classes.
+
+**Factory Design Pattern:** The `fromJson()` constructor uses the factory design pattern to create instances of the `Recipe` and `Ingredient` classes from JSON data. The purpose of the factory design pattern method is a creational design pattern that provides an interface for creating objects in a superclass.
+
+.. code-block:: dart
+  factory Recipe.fromJson(String json) {
+    final parsed = jsonDecode(json)['recipe'] as Map<String, dynamic>;
+    return Recipe(
+      label: parsed['label'],
+      image: parsed['image'],
+      source: parsed['source'],
+      url: parsed['url'],
+      shareAs: parsed['shareAs'],
+      yield: parsed['yield'],
+      dietLabels: List<String>.from(parsed['dietLabels']),
+      healthLabels: List<String>.from(parsed['healthLabels']),
+      cautions: List<String>.from(parsed['cautions']),
+      ingredientLines: List<String>.from(parsed['ingredientLines']),
+      ingredients: (parsed['ingredients'] as List<dynamic>)
+          .map((ingredient) => Ingredient.fromJson(ingredient))
+          .toList(),
+      cuisineType: parsed['cuisineType'] ?? '',
+      mealType: parsed['mealType'] ?? '',
+      dishType: List<String>.from(parsed['dishType'] ?? []),
+      totalTime: parsed['totalTime'] ?? '',
+      recipeYield: parsed['recipeYield'] ?? '',
+      calories: List<String>.from(parsed['calories'] ?? []),
+      totalWeight: List<String>.from(parsed['totalWeight'] ?? []),
+      totalNutrients: List<String>.from(parsed['totalNutrients'] ?? []),
+      totalDaily: List<String>.from(parsed['totalDaily'] ?? []),
+    );
+  }
