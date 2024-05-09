@@ -3,15 +3,13 @@ Testing
 
 Functional Requirements
 ----------------------
-
-
 Login UI and Register_Login_Manager Tests  (Ref UR 1 and 2)
 ------------------------------------------------------------
 .. list-table:: Login UI and Register_Login_Manager Tests (Ref UR 1 and 2)
    :widths: 5 25 25 25 25
    :header-rows: 1
 
-   * - ID
+   * - ID (Needs to be redone as duplicate values from requirement table)
      - Procedure
      - Test Inputs
      - Result
@@ -144,121 +142,57 @@ Beta-Testing (Ref UR 1 and 2)
      - Result
      - Description to Meet Specification
    * - 1
-     - LogIn onTap Test {}
-     - pumpWidget onTap {}
-     - Call is true
-     - FR Met: Trigger authentication and function is initiated (UR 1 a).
-   * - 2
-     - LogIn onTap Existence Test {}
-     - pumpWidget onTap {}
-     - Widget Exists
-     - 
-   * - 3
-     - showOSError()
-     - pumpWidget with OSError function applied
-     - Notification is generated when Android user attempts to use Apple Sign In
-     - SR Met: Error messages elicited to client interface (UR 1 f)
-   * - 4
-     - showOSErrors()
-     - pumpWidget with OSError function applied
-     - Notification is generated to display error messages when creating an account
-     - SR Met: Error messages elicited to client interface when invalid information entered (UR 1 f).
-   * - 5
-     - checkEmailValidity()
-     - 'example@example.com'
-     - True
-     - SR Met: User can input, email, passwords, and required information (UR 1, 2 d, e, f). b) Improved SR: Validation Rules. Password length above 6 characters and no more than 255. Must include 1 @ character. c) All proposed functions are shown below:
-   * - 6
-     - checkEmailValidity()
-     - 'a@b.c'
-     - False
-     - 
-   * - 7
-     - checkEmailValidity()
-     - 'example.com'
-     - False
-     - 
-   * - 8
-     - checkEmailValidity()
-     - 'ex@mple@example.com'
-     - False
-     - 
-   * - 9
-     - checkEmailValidity()
-     - Long email of over 255 with @example.com
-     - False
-     - 
-   * - 10
-     - confirmPassword()
-     - 'jam!es123', 'james!es123'
-     - True
-     - Contains symbol. Length and Match
-   * - 11
-     - confirmPassword()
-     - 'ja!23', 'ja!23'
-     - False
-     - Length not retained
-   * - 12
-     - confirmPassword()
-     - 'jam!es123', 'dhsdjshgf'
-     - False
-     - 
-   * - 13
-     - confirmPassword()
-     - 'jafjhsf', 'jafjhsf'
-     - False
-     - No Symbol
-   * - 14
-     - passwordLengthCheck()
-     - 'NoSymbolPassword123'
-     - False
-     - 
-   * - 15
-     - passwordLengthCheck()
-     - ''
-     - False
-     - 
-   * - 16
-     - passwordLengthCheck()
-     - Password Above 255 characters
-     - False
-     - 
-   * - 17
-     - passwordLengthCheck()
-     - 'Short'
-     - False
-     - 
-   * - 18
-     - passwordLengthCheck()
-     - 'jam!es123'
-     - True
-     - 
-   * - 19
-     - containsSymbol()
-     - '#'
-     - True
-     - 
-   * - 20
-     - containsSymbol()
-     - 'password'
-     - False
-     - 
-   * - 21
-     - isWhiteSpace()
-     - ' '
-     - True
-     - 
-   * - 22
-     - isWhiteSpace()
-     - 'world'
-     - False
-     - 
-   * - 23
-     - isWhiteSpace()
-     - null
-     - False
-     - 
+     - Trigger Sign Up Process and Complete
+     - abigailNorman1@gmail.com
 
+Logintest1
+Logintest 1
+
+     - Pass
+     - FR Met: FR: Ability to initiate account creation, upon receiving valid user details. (UR 2 a)
+
+SR: System should store username and password into backend database (UR 2 g)
+
+   * - 2
+     - Trigger Sign In Process and Complete
+
+     - alex_pearso@the_pearsons.com
+
+Logintest2
+
+     - Pass
+     - FR Met: Ability to initiate create account process (UR 1  a)
+   * - 3
+     - Halt Sign In Process
+     - alex_pearso@the_pearsons.com
+
+Activation of signIn rather than signUp completion and then back to signUp screen
+
+
+     - Fail
+
+     - FR Met: System should terminate an ongoing authentication process, providing an immediate halt to user access validation. (UR 2 b).
+
+FR Change: Doesn’t return to previous sign In details after halt of sign Up process  (UR 2 c).
+
+     
+   * - 4
+     - Trigger authentication and Halt authentication 
+     - abigailNorman1@gmail.com
+
+Activation of signUp rather than signIn
+
+     - Pass
+     - FR Met:  Should terminate an ongoing authentication process, providing an immediate halt to user access validation (UR 1 b, f). 
+   * - 5
+     - Trigger authentication and Halt authentication, Attempt to continue the sign in process
+     - alex_pearso@the_pearsons.com
+
+Activation of signUp rather than signIn  and then back to signIn screen
+
+     - Fail
+     - FR Change: Doesn’t return to previous log in details (UR 1 c)
+ 
 Profile Manager Test (Ref UR 3)
 -------------------------------
 .. list-table:: Profile Manager Test (Ref UR 3)
@@ -451,7 +385,7 @@ Ingredient Manager Tests (Ref UR 4)
      - 
 
 Api Search Test (Ref UR 4)
---------------------------
+----------------------------
 .. list-table:: Api Search Test (Ref UR 4)
    :widths: 5 25 25 25 25
    :header-rows: 1
@@ -558,7 +492,7 @@ Add Recipe Manager Tests (Ref UR 8)
    * - 7
      - getAllRecipes()
      - {‘ingredients’: {‘ingredient1’, ‘ingredient2’, ‘ingredient3’,
-‘recipeName: Josh’s recipes’,
+recipeName: Josh’s recipes’,
 ‘Rating’: null,
 ‘foodRestriction’:’Vegan’,
 ‘createdAt’; Datetime.now()} with ‘dummyUID’
@@ -568,7 +502,6 @@ Add Recipe Manager Tests (Ref UR 8)
 ‘foodRestriction’:’Vegan’,
 ‘createdAt’; Datetime.now()}
      - 
-
 
 FAQ Page Test (Ref UR 9)
 -------------------------
@@ -593,8 +526,8 @@ FAQ Page Test (Ref UR 9)
      - Changed SR: FAQ Questions and Query Content are less than 200 characters (UR 9 f)
 
 Non-Functional Test:
---------------------
-.. list-table:: Title
+-----------------------------------
+.. list-table:: Non-Functional Test
    :widths: 5 25 25 25 25
    :header-rows: 1
 
