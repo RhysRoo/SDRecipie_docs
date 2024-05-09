@@ -104,7 +104,7 @@ The `Recipe` and `Ingredient` classes represent recipe data fetched from the Eda
 
 - **fromJson() Constructor:** Parses JSON data into instances of the `Recipe` and `Ingredient` classes.
 
-**Factory Design Pattern:** The `fromJson()` constructor uses the factory design pattern to create instances of the `Recipe` and `Ingredient` classes from JSON data. The purpose of the factory design pattern method is a creational design pattern that provides an interface for creating objects in a superclass.
+- **Factory Design Pattern:** The `fromJson()` constructor uses the factory design pattern to create instances of the `Recipe` and `Ingredient` classes from JSON data. The purpose of the factory design pattern method is a creational design pattern that provides an interface for creating objects in a superclass.
 
 .. code-block:: dart
   factory Recipe.fromJson(String json) {
@@ -134,3 +134,5 @@ The `Recipe` and `Ingredient` classes represent recipe data fetched from the Eda
       totalDaily: List<String>.from(parsed['totalDaily'] ?? []),
     );
   }
+
+
