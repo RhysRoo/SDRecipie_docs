@@ -435,7 +435,7 @@ Add Recipe Manager Tests (Ref UR 8)
 -----------------------------------
 
 .. list-table:: Add Recipe Manager Tests (Ref UR 8)
-   :widths: 5 25 25 25 25
+   :widths: 5 20 20 10 25
    :header-rows: 1
 
    * - ID
@@ -455,9 +455,9 @@ Add Recipe Manager Tests (Ref UR 8)
      - Partially Met (UR 8 d): Additional validation rules
    * - 3
      - deleteRecipe()
-     - {‘ingredient1’, ‘ingredient2’, ‘ingredient3’, ‘ingredient4’} with ‘dummyUID’ 
+     - {‘ingredient1’, ‘ingredient2’, ‘ingredient3’, ‘ingredient4’} with ‘dummyUID’
      - Document doesn’t exist
-     - 
+     - FR Met: Ensures that users can only delete recipes associated with their UID.
    * - 4
      - saveRecipe()
      - {{‘ingredient1’, ‘quantity1’},{ ‘ingredient2’, ‘quantity2’}} with ‘dummyUID’ and ‘None’ food restriction
@@ -472,12 +472,13 @@ Add Recipe Manager Tests (Ref UR 8)
      - getAllRecipes()
      - Unauthorised access
      - {} Unauthorised
-     - 
+     - NF SR: System must prevent unauthorized access to recipe data.
    * - 7
      - getAllRecipes()
-     - {‘ingredients’: {‘ingredient1’, ‘ingredient2’, ‘ingredient3’,
-     - {‘ingredients’: {‘ingredient1’, ‘ingredient2’, ‘ingredient3’,
-     - 
+     - {‘ingredients’: {‘ingredient1’, ‘ingredient2’, ‘ingredient3’}}
+     - {‘ingredients’: {‘ingredient1’, ‘ingredient2’, ‘ingredient3’}}
+     - FR Met: System should correctly retrieve all recipes containing specified ingredients.
+
 
 FAQ Page Test (Ref UR 9)
 -------------------------
@@ -503,10 +504,10 @@ FAQ Page Test (Ref UR 9)
      - Changed SR: FAQ Questions and Query Content are less than 200 characters (UR 9 f)
 
 Non-Functional Test:
------------------------------------
+--------------------
 
 .. list-table:: Non-Functional Test
-   :widths: 5 25 25 25 25
+   :widths: 5 20 15 15 10 20
    :header-rows: 1
 
    * - ID
